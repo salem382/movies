@@ -2,7 +2,7 @@
 
 ## live demo
 
-https://movies-ten-opal.vercel.app/search
+https://movies-ten-opal.vercel.app/
 
 ## Installation and Setup Instructions
 
