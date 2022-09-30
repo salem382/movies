@@ -19,14 +19,14 @@ const Register = () => {
     const postData = (e) => {
         let usr = {...userData};
         usr[e.target.name] = e.target.value;
-        setUserData(usr)
+        setUserData({...usr})
     }
 
     const submitData = async (e) => {
         e.preventDefault();
         if (userValidation().error) {
             let errs = userValidation().error.details.map(item =>item.message )
-            setErrArr(errs)
+            setErrArr([...errs])
         } else {
             setErrArr([]);
             setIsPost(true);

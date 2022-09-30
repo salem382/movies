@@ -17,7 +17,7 @@ const Login = ({checkLogin}) => {
     const postData = (e) => {
         let usr = {...userData};
         usr[e.target.name] = e.target.value;
-        setUserData(usr)
+        setUserData({...usr})
     }
 
     const submitData = async (e) => {
@@ -34,7 +34,6 @@ const Login = ({checkLogin}) => {
             localStorage.setItem('token',data.token);
             checkLogin()
             setIsPost(false);
-            console.log (data);
         }
     }
 

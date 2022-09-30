@@ -6,7 +6,7 @@ import { Navigate } from "react-router-dom"
         
         return <Navigate  to='/login'/>
     } else {
-        return props.children
+        return props.children;
     }
 }
 
